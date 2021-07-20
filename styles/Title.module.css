@@ -1,0 +1,55 @@
+.container{
+    min-height: 60px;
+    background-color: #40456c;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.container>div{
+    display: flex;
+}
+
+.button{
+    width: max-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #ba4acc;
+    color: white;
+    font-size: .9rem;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.container>div>div:nth-child(2)>h4{
+    color: white;
+}
+
+.container>div>div:nth-child(2){
+    margin-right: 40px;
+}
+
+.sort{
+    color: rgb(163, 162, 162);
+    font-size: .8rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 570px) {
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
